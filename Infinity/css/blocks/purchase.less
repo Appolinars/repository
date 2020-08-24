@@ -1,0 +1,72 @@
+// main: ../style.less
+
+.purchase {
+    background-color: @green;
+}
+
+.purchase__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 160px;
+
+    color: #f7f7f7;
+    
+    @media @mobile-sm {
+        flex-direction: column;
+    }
+}
+
+.purchase__text {
+    max-width: 700px;
+    
+    @media @tablet {
+        max-width: 480px;
+    }
+    
+    @media @mobile{
+        max-width: 340px;
+    }
+}
+
+.purchase__title {
+    font-size: 46px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    
+    @media @tablet {
+        font-size: 33px;
+    }
+    
+    @media @mobile {
+        font-size: 23px;
+    }
+    
+    @media @mobile-sm {
+        font-size: 20px;
+    }
+}
+
+.purchase__subtitle {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    
+    @media @mobile-sm {
+        font-size: 15px;
+    }
+    
+}
+
+.purchase__btn {
+    border: 1px solid #f7f7f7;
+    transition: all .2s linear;
+    
+    &:hover {
+        color: @green;
+        background-color: #f7f7f7;
+        box-shadow: 2px 2px 10px 7px rgba(#f7f7f7, .24);
+    }
+}

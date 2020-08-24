@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Infinity</title>
+</head>
+
+<body>
+
+    <!--Intro-->
+
+    <div class="intro" id="intro">
+        <div class="video">
+            <video class="video__media" src="video/intro-bg.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="intro__content">
+            <div class="intro__text wow bounceInRight" data-wow-duration="2s" data-wow-offset="150">
+                <div class="intro__suptitle">Content Description</div>
+                <h1 class="intro__title">See the world through our product</h1>
+                <div class="intro__subtitle">Get The Most Converstion Rate Easily.</div>
+            </div>
+
+            <div class="intro__subscribe wow bounceInLeft" data-wow-duration="2s" data-wow-offset="150">
+                <form class="subscribe__form" action="/" method="post">
+                    <input type="name" name="name" class="subscribe__name" placeholder="Your Name">
+                    <input type="email" name="email" class="subscribe__email" placeholder="Email Address">
+                    <button class="btn subscribe__btn" type="submit" data-fancybox data-src="#modal1" href="javascript:;">Subscribe &raquo;</button>
+                </form>
+                <div class="subscribe__text">* We don’t share your personal<br>info with anyone Check out our <span>Policy</span> &amp; for more information <span>Contact Us</span>. </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+
+        <!--Nav-->
+
+        <div class="nav">
+            <div class="container">
+                <div class="nav__inner">
+                    <div class="nav__logo" data-scroll="#intro">
+                        <img src="img/nav-logo.png" alt="">
+                    </div>
+                    <nav id="nav">
+                        <a href="" class="nav__link" data-scroll="#services">Services</a>
+                        <a href="" class="nav__link" data-scroll="#features">About</a>
+                        <a href="" class="nav__link" data-scroll="#works">Portfolio</a>
+                        <a href="" class="nav__link" data-scroll="#team">Team</a>
+                        <a href="" class="nav__link" data-scroll="#packages">Pricing</a>
+                        <a href="" class="nav__link" data-scroll="#testimonial">Testimonial</a>
+                    </nav>
+                    <button class="burger"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--Services-->
+
+        <section class="services" id="services">
+            <div class="container">
+
+                <div class="section__header">
+                    <img src="img/services_header.png" alt="" class="section__img">
+                    <div class="section__suptitle">Choose your required service from here</div>
+                    <h3 class="section__title">Services we <span>Provide</span></h3>
+                </div>
+
+                <div class="services__content wow fadeInLeftBig" data-wow-duration="1s" data-wow-offset="50">
+                    <div class="services__item wow flipInY" data-wow-duration="2s" data-wow-offset="50">
+                        <div class="services__item-def">
+                            <div class="services__title">Web Design</div>
+                            <img src="img/services/1.png" alt="" class="services__logo">
+                        </div>
+                        <div class="services__item-hov">
+                            <div class="services__info">PSD to HTML</div>
+                            <div class="services__info">Adaptive Web Design</div>
+                            <div class="services__info">Responsive Web Design</div>
+                        </div>
+                    </div>
+                    <div class="services__item wow flipInX" data-wow-duration="2s" data-wow-offset="50">
+                        <div class="services__item-def">
+                            <div class="services__title">Web Development</div>
+                            <img src="img/services/2.png" alt="" class="services__logo">
+                        </div>
+                        <div class="services__item-hov">
+                            <div class="services__info">PSD to HTML</div>
+                            <div class="services__info">Adaptive Web Design</div>
+                            <div class="services__info">Responsive Web Design</div>
+                        </div>
+                    </div>
+                    <div class="services__item wow flipInY" data-wow-duration="2s" data-wow-offset="50">
+                        <div class="services__item-def">
+                            <div class="services__title">Web Maintenance</div>
+                            <img src="img/services/3.png" alt="" class="services__logo">
+                        </div>
+                        <div class="services__item-hov">
+                            <div class="services__info">PSD to HTML</div>
+                            <div class="services__info">Adaptive Web Design</div>
+                            <div class="services__info">Responsive Web Design</div>
+                        </div>
+                    </div>
+                    <div class="services__item wow flipInX" data-wow-duration="2s" data-wow-offset="50">
+                        <div class="services__item-def">
+                            <div class="services__title">Web Design</div>
+                            <img src="img/services/4.png" alt="" class="services__logo">
+                        </div>
+                        <div class="services__item-hov">
+                            <div class="services__info">PSD to HTML</div>
+                            <div class="services__info">Adaptive Web Design</div>
+                            <div class="services__info">Responsive Web Design</div>
+                        </div>
+                    </div>
+                    <div class="services__item wow flipInY" data-wow-duration="2s" data-wow-offset="50">
+                        <div class="services__item-def">
+                            <div class="services__title">Web Development</div>
+                            <img src="img/services/5.png" alt="" class="services__logo">
+                        </div>
+                        <div class="services__item-hov">
+                            <div class="services__info">PSD to HTML</div>
+                            <div class="services__info">Adaptive Web Design</div>
+                            <div class="services__info">Responsive Web Design</div>
+                        </div>
+                    </div>
+                    <div class="services__item wow flipInX" data-wow-duration="2s" data-wow-offset="50">
+                        <div class="services__item-def">
+                            <div class="services__title">Web Maintenance</div>
+                            <img src="img/services/6.png" alt="" class="services__logo">
+                        </div>
+                        <div class="services__item-hov">
+                            <div class="services__info">PSD to HTML</div>
+                            <div class="services__info">Adaptive Web Design</div>
+                            <div class="services__info">Responsive Web Design</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--Contents-->
+
+        <section class="contents wow bounceInRight" data-wow-duration="2s" data-wow-offset="150">
+            <div class="container">
+
+                <div class="section__header">
+                    <img src="img/contents_header.png" alt="" class="section__img">
+                    <div class="section__suptitle">Content desription</div>
+                    <h3 class="section__title">Our <span>Contents</span></h3>
+                </div>
+
+                <div class="contents__content">
+
+                    <div class="contents__slider">
+                        <div class="slider__item">
+                            <img src="https://placeimg.com/750/500/tech" alt="">
+                        </div>
+                        <div class="slider__item">
+                            <img src="https://placeimg.com/750/500/people" alt="">
+                        </div>
+                        <div class="slider__item">
+                            <img src="https://placeimg.com/750/500/nature" alt="">
+                        </div>
+                    </div>
+
+                    <div class="contents__accordeon">
+                        <div class="accordeon__inner">
+                            <div class="accordeon__item">
+                                <input type="checkbox" id="tab1" name="tab-group" checked>
+                                <label for="tab1" class="tab__title">
+                                    Lorem message<br><span>First message</span>
+                                </label>
+                                <div class="tab__content">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</div>
+                            </div>
+                            <div class="accordeon__item">
+                                <input type="checkbox" id="tab2" name="tab-group">
+                                <label for="tab2" class="tab__title">
+                                    Lorem message<br><span>Second message</span>
+                                </label>
+                                <div class="tab__content">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</div>
+                            </div>
+                            <div class="accordeon__item">
+                                <input type="checkbox" id="tab3" name="tab-group">
+                                <label for="tab3" class="tab__title">
+                                    Lorem message<br><span>Third message</span>
+                                </label>
+                                <div class="tab__content">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</div>
+                            </div>
+                        </div>
+                        <div class="accordeon__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--WeDo-->
+
+        <section class="wedo wow fadeInLeft" data-wow-duration="2s" data-wow-offset="150">
+            <div class="container">
+
+                <div class="section__header">
+                    <img src="img/wedo/header_wedo.png" alt="" class="section__img">
+                    <div class="section__suptitle">Product wedo</div>
+                    <h3 class="section__title">What we <span>do</span></h3>
+                </div>
+
+                <div class="wedo__content">
+
+                    <div class="wedo__item wow bounceInUp" data-wow-duration="2s">
+                        <img src="img/wedo/1.png" alt="" class="wedo__logo">
+                        <div class="wedo__title">Fully Responsive</div>
+                        <div class="wedo__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+                    </div>
+
+                    <div class="wedo__item wow bounceInDown" data-wow-duration="2s">
+                        <img src="img/wedo/2.png" alt="" class="wedo__logo">
+                        <div class="wedo__title">Easy to Customize</div>
+                        <div class="wedo__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+                    </div>
+
+                    <div class="wedo__item wow bounceInUp" data-wow-duration="2s">
+                        <img src="img/wedo/3.png" alt="" class="wedo__logo">
+                        <div class="wedo__title">Direct Support</div>
+                        <div class="wedo__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!--Features-->
+
+        <section class="features" id="features">
+            <div class="container">
+
+                <div class="section__header">
+                    <img src="img/features_header.png" alt="" class="section__img">
+                    <div class="section__suptitle">Product features</div>
+                    <h3 class="section__title">What our <span>Features</span></h3>
+                </div>
+
+                <div class="features__content wow rotateInUpLeft" data-wow-duration="1s" data-wow-offset="150">
+
+                    <div class="features__item">
+                        <div class="features__video">
+                            <iframe width="555" height="310" src="https://www.youtube.com/embed/8GYL6c_GTE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="features__info">
+                            <div class="features__title">Take a sneak peek at our videos, for once.</div>
+                            <div class="features__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo beatae omnis modi laboriosam? Totam quae, ab, vero tempora minus ipsam at dolores dolor, obcaecati deleniti provident pariatur ex modi aperiam. Quae, itaque.</div>
+                        </div>
+                    </div>
+
+                    <div class="features__item">
+                        <div class="features__video">
+                            <iframe width="555" height="310" src="https://www.youtube.com/embed/hBkcwy-iWt8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="features__info">
+                            <div class="features__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, esse.</div>
+                            <div class="features__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo beatae omnis modi laboriosam? Totam quae, ab, vero tempora minus ipsam at dolores dolor, obcaecati deleniti provident pariatur ex modi aperiam. Quae, itaque.</div>
+                        </div>
+                    </div>
+
+                    <div class="features__item">
+                        <div class="features__video">
+                            <iframe width="555" height="310" src="https://www.youtube.com/embed/aK4JSwhdcdE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="features__info">
+                            <div class="features__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                            <div class="features__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo beatae omnis modi laboriosam? Totam quae, ab, vero tempora minus ipsam at dolores dolor, obcaecati deleniti provident pariatur ex modi aperiam. Quae, itaque.</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--Works-->
+
+        <section class="works" id="works">
+
+            <div class="section__header">
+                <img src="img/works_header.png" alt="" class="section__img">
+                <div class="section__suptitle">Protfolio</div>
+                <h3 class="section__title">Our <span>Works</span></h3>
+            </div>
+
+            <div class="works__content wow flipInY" data-wow-duration="2s" data-wow-offset="150">
+
+                <ul id="works-filter">
+                    <li class="btn btn__filter active" data-filter="0">All</li>
+                    <li class="btn btn__filter" data-filter="1">Web Design</li>
+                    <li class="btn btn__filter" data-filter="2">Web Development</li>
+                    <li class="btn btn__filter" data-filter="3">Uncategorized</li>
+                </ul>
+
+                <div class="works__list">
+                    <div class="works__item category-1">
+                        <div class="works__tech">
+                            <span>Bootstrap</span>
+                            <span>Landing</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                        <div class="works__img">
+                            <img src="img/works/1.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__text">
+                                Infinite Landing Page<br>by <span>Naveen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__item category-1">
+                        <div class="works__tech">
+                            <span>Bootstrap</span>
+                            <span>Landing</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                        <div class="works__img">
+                            <img src="img/works/2.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__text">
+                                Infinite Landing Page<br>by <span>Naveen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__item category-2">
+                        <div class="works__tech">
+                            <span>Bootstrap</span>
+                            <span>Landing</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                        <div class="works__img">
+                            <img src="img/works/3.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__text">
+                                Infinite Landing Page<br>by <span>Naveen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__item category-2">
+                        <div class="works__tech">
+                            <span>Bootstrap</span>
+                            <span>Landing</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                        <div class="works__img">
+                            <img src="img/works/4.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__text">
+                                Infinite Landing Page<br>by <span>Naveen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__item category-3">
+                        <div class="works__tech">
+                            <span>Bootstrap</span>
+                            <span>Landing</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                        <div class="works__img">
+                            <img src="img/works/5.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__text">
+                                Infinite Landing Page<br>by <span>Naveen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__item category-3">
+                        <div class="works__tech">
+                            <span>Bootstrap</span>
+                            <span>Landing</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                        <div class="works__img">
+                            <img src="img/works/6.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__text">
+                                Infinite Landing Page<br>by <span>Naveen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__item category-1">
+                        <div class="works__tech">
+                            <span>Bootstrap</span>
+                            <span>Landing</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                        <div class="works__img">
+                            <img src="img/works/7.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__text">
+                                Infinite Landing Page<br>by <span>Naveen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__item category-3">
+                        <div class="works__tech">
+                            <span>Bootstrap</span>
+                            <span>Landing</span>
+                            <span>CSS</span>
+                            <span>jQuery</span>
+                        </div>
+                        <div class="works__img">
+                            <img src="img/works/8.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__text">
+                                Infinite Landing Page<br>by <span>Naveen</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--Team-->
+
+        <section id="team" class="team wow slideInRight" data-wow-duration="2s" data-wow-offset="150">
+            <div class="container">
+
+                <div class="section__header">
+                    <img src="img/team_header.png" alt="" class="section__img">
+                    <div class="section__suptitle">People who cares</div>
+                    <h3 class="section__title">Our <span>Team</span></h3>
+                </div>
+
+                <div class="team__content">
+                    <div class="team__list">
+                        <div class="team__item wow flipInX" data-wow-duration="2s" data-wow-offset="150" data-wow-delay="1s">
+                            <div class="team__photo">
+                                <img src="img/team/1.jpg" alt="">
+                            </div>
+                            <div class="team__name">Alex Potter</div>
+                            <div class="team__prof">Website Designer</div>
+                            <div class="team__social">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="team__item wow flipInY" data-wow-duration="2s" data-wow-offset="150" data-wow-delay="1s">
+                            <div class="team__photo">
+                                <img src="img/team/2.jpg" alt="">
+                            </div>
+                            <div class="team__name">Peter Parker</div>
+                            <div class="team__prof">Website Designer</div>
+                            <div class="team__social">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="team__item wow flipInX" data-wow-duration="2s" data-wow-offset="150" data-wow-delay="1s">
+                            <div class="team__photo">
+                                <img src="img/team/3.jpg" alt="">
+                            </div>
+                            <div class="team__name">Armoer Janson</div>
+                            <div class="team__prof">Website Designer</div>
+                            <div class="team__social">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--New Features-->
+
+        <section class="new_features">
+            <div class="container">
+                <div class="new_features__inner wow slideInLeft" data-wow-duration="2s" data-wow-offset="150">
+                    <div class="new_features__img">
+                        <img src="img/new_features.png" alt="">
+                    </div>
+                    <div class="new_features__content">
+                        <h4 class="new_features__title">NEW FEATURES</h4>
+                        <div class="new_features__subtitle">Some extra <span>Love</span> from us</div>
+                        <div class="new_features__text">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor.</div>
+                        <div class="new_features__list">
+                            <ul>
+                                <li>Modern Design</li>
+                                <li>Fully Responsive </li>
+                                <li>Bootstrap Grid </li>
+                                <li>Mailchimp Supported </li>
+                                <li>Easy To Customize</li>
+                                <li>Powerful Options </li>
+                                <li>Fresh Colors </li>
+                                <li>Validated Code </li>
+                                <li>Ajax Supported Form </li>
+                                <li>Best Typography</li>
+                            </ul>
+                        </div>
+                        <div class="new_features__footer">
+                            <button class="btn new_features__btn" type="button" data-fancybox data-animation-duration="500" data-src="#animatedModal" href="javascript:;">Get Infinite Now</button>
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Statistic-->
+
+        <div class="statistic">
+            <div class="container">
+                <div class="statistic__inner wow fadeIn" data-wow-duration="2s" data-wow-offset="150">
+                    <div class="statistic__title">70% People Belive Another Consumer's Opinion Posted Online</div>
+                    <div class="statistic__list">
+                        <div class="statistic__item">
+                            <div class="statistic__logo">
+                                <img src="img/statistic/facebook.png" alt="">
+                            </div>
+                            <div class="statistic__count">5,000</div>
+                            <div class="statistic__text">Facebook Like</div>
+                        </div>
+                        <div class="statistic__item">
+                            <div class="statistic__logo">
+                                <img src="img/statistic/twitter.png" alt="">
+                            </div>
+                            <div class="statistic__count">3,000</div>
+                            <div class="statistic__text">Twitter Follower</div>
+                        </div>
+                        <div class="statistic__item">
+                            <div class="statistic__logo">
+                                <img src="img/statistic/clients.png" alt="">
+                            </div>
+                            <div class="statistic__count">900</div>
+                            <div class="statistic__text">Happy Clients</div>
+                        </div>
+                        <div class="statistic__item">
+                            <div class="statistic__logo">
+                                <img src="img/statistic/money.png" alt="">
+                            </div>
+                            <div class="statistic__count">7,000</div>
+                            <div class="statistic__text">Money Earned</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Subscribe-->
+
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__inner wow bounceIn" data-wow-duration="2s" data-wow-offset="150">
+                    <div class="subscribe__left">
+                        <i class="far fa-hand-point-right"></i>
+                    </div>
+                    <div class="subscribe__right">
+                        <h4 class="subscribe__title">Subscribe</h4>
+                        <div class="subscribe__form">
+                            <input type="email" name="email" placeholder="Enter your email">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="subscribe__text">Subscribe to our weekly newsletter, We promise you that we wont spam you. Asperiores totam molestias eaque sunt maiores delectus modi ut ab!</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Buy-->
+
+        <section class="buy wow flipInX" data-wow-duration="2s" data-wow-offset="150">
+            <div class="container">
+                <div class="buy__suptitle">Brought you by <span>Infinite</span></div>
+                <div class="buy__logo">
+                    <img src="img/nav-logo.png" alt="">
+                </div>
+                <h4 class="buy__title">DESIGN BETTER. FASTER. TOGETHER.</h4>
+                <div class="buy__text">The Infinite is most converting landing page ever, Everything you can wish for.</div>
+                <button class="btn buy__btn" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Buy Now</button>
+            </div>
+        </section>
+
+        <!--Packages-->
+
+        <section class="packages" id="packages">
+            <div class="container">
+
+                <div class="section__header">
+                    <img src="img/packages_header.png" alt="" class="section__img">
+                    <div class="section__suptitle">What we propose</div>
+                    <h3 class="section__title">Our <span>Packages</span></h3>
+                </div>
+
+                <div class="packages__content">
+                    <div class="slide__helper">
+                        <div class="packages__item wow bounceInUp" data-wow-duration="2s" data-wow-offset="150">
+                            <div class="packages__kind">Basic</div>
+                            <div class="packages__cost">$59</div>
+                            <div class="packages__subtitle">Per Month</div>
+                            <div class="packages__adv"><span>Unlimited</span> Bandwidth</div>
+                            <div class="packages__adv"><span>Unlimited</span> Space</div>
+                            <div class="packages__adv"><span>One Time</span> Fees</div>
+                            <div class="packages__adv"><span>24/7</span> Free Suport</div>
+                            <div class="packages__adv"><span>Cpanel</span> Access</div>
+                            <button class="btn packages__btn" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Get Started</button>
+                            <div class="packages__bottom">30 Day One User <br>Try Our Product Now </div>
+                        </div>
+                    </div>
+                    <div class="slide__helper">
+                        <div class="packages__item wow flipInY" data-wow-duration="2s" data-wow-offset="150">
+                            <div class="packages__kind">Premium</div>
+                            <div class="packages__cost">$99</div>
+                            <div class="packages__subtitle">Per Month</div>
+                            <div class="packages__adv"><span>Unlimited</span> Bandwidth</div>
+                            <div class="packages__adv"><span>Unlimited</span> Space</div>
+                            <div class="packages__adv"><span>One Time</span> Fees</div>
+                            <div class="packages__adv"><span>24/7</span> Free Suport</div>
+                            <div class="packages__adv"><span>Cpanel</span> Access</div>
+                            <button class="btn packages__btn" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Get Started</button>
+                            <div class="packages__bottom">30 Day One User <br>Try Our Product Now </div>
+                        </div>
+                    </div>
+                    <div class="slide__helper">
+                        <div class="packages__item wow bounceInDown" data-wow-duration="2s" data-wow-offset="150">
+                            <div class="packages__kind">Ultimate</div>
+                            <div class="packages__cost">$149</div>
+                            <div class="packages__subtitle">Per Month</div>
+                            <div class="packages__adv"><span>Unlimited</span> Bandwidth</div>
+                            <div class="packages__adv"><span>Unlimited</span> Space</div>
+                            <div class="packages__adv"><span>One Time</span> Fees</div>
+                            <div class="packages__adv"><span>24/7</span> Free Suport</div>
+                            <div class="packages__adv"><span>Cpanel</span> Access</div>
+                            <button class="btn packages__btn" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Get Started</button>
+                            <div class="packages__bottom">30 Day One User <br>Try Our Product Now </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="packages__footer">
+                    Want to know more ? <span>Read article</span>, check <span>FAQ</span>, or <span>contact us</span>.
+                </div>
+
+            </div>
+        </section>
+
+        <!--Get it-->
+
+        <section class="getit">
+            <div class="container">
+                <div class="getit__inner">
+                    <h4 class="getit__title">Get it right now</h4>
+                    <div class="getit__subtitle">Supported By Every Platfrom <span>know more</span> </div>
+                    <div class="getit__options">
+                        <div class="getit__item">
+                            <a href="#">
+                                <img src="img/getit/App%20Store.png" alt="">
+                            </a>
+                        </div>
+                        <div class="getit__item">
+                            <a href="#">
+                                <img src="img/getit/Google%20play.png" alt="">
+                            </a>
+                        </div>
+                        <div class="getit__item">
+                            <a href="#">
+                                <img src="img/getit/Windows.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Testimonial-->
+
+        <section class="testimonial" id="testimonial">
+            <div class="container">
+                <div class="testimonial__inner wow bounceIn" data-wow-duration="2s" data-wow-offset="150">
+                    <div class="testimonial__item">
+                        <div class="testimonial__avatar">
+                            <img src="img/testimonial/1.jpg" alt="">
+                        </div>
+                        <div class="testimonial__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="testimonial__text">The most appealing part of the theme it's very clean and light. I liked the level of the provided service. It reveals an individual approach to each customer</div>
+                        <div class="testimonial__link">
+                            <a href=""><i class="fab fa-twitter"></i> @anonymous</a>
+                        </div>
+                    </div>
+                    <div class="testimonial__item">
+                        <div class="testimonial__avatar">
+                            <img src="img/testimonial/2.jpg" alt="">
+                        </div>
+                        <div class="testimonial__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="testimonial__text">The most appealing part of the theme it's very clean and light. I liked the level of the provided service. It reveals an individual approach to each customer</div>
+                        <div class="testimonial__link">
+                            <a href=""><i class="fab fa-twitter"></i> @anonymous</a>
+                        </div>
+                    </div>
+                    <div class="testimonial__item">
+                        <div class="testimonial__avatar">
+                            <img src="img/testimonial/3.jpg" alt="">
+                        </div>
+                        <div class="testimonial__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial__text">The most appealing part of the theme it's very clean and light. I liked the level of the provided service. It reveals an individual approach to each customer</div>
+                        <div class="testimonial__link">
+                            <a href=""><i class="fab fa-twitter"></i> @anonymous</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Partners-->
+
+        <div class="partners">
+            <div class="container">
+                <div class="partners__inner">
+                    <img src="img/partners/1.png" alt="">
+                    <img src="img/partners/2.png" alt="">
+                    <img src="img/partners/3.png" alt="">
+                    <img src="img/partners/4.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!--Contact-->
+
+        <section class="contact">
+            <div class="container">
+
+                <div class="section__header">
+                    <img src="img/contact_header.png" alt="" class="section__img">
+                    <div class="section__suptitle">Contact us</div>
+                    <h3 class="section__title">Say <span>Hello</span></h3>
+                </div>
+
+                <div class="contact__inner">
+                    <div class="contact__form wow bounceInLeft" data-wow-duration="2s" data-wow-offset="150">
+                        <form action="/">
+                            <input type="name" name="name" class="form__name" placeholder="Your Name">
+                            <input type="email" name="email" class="form__email" placeholder="Email">
+                            <input type="text" name="text" class="form__text" placeholder="Subject">
+                            <textarea name="textarea" class="form__textarea" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn form__btn" data-fancybox data-src="#modal1" href="javascript:;">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164153.5222970856!2d36.145742038497254!3d49.99450702572823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1592164955117!5m2!1sru!2sua" width="500" height="345" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <img src="img/contact/1.png" alt="">
+                            <div class="contact__text">Have a question?</div>
+                            <a href="tel:123456789" class="contact__subtitle"><span>+1 123456789</span></a>
+                        </div>
+                        <div class="contact__item">
+                            <img src="img/contact/2.png" alt="">
+                            <div class="contact__text">Open Mon - Fri</div>
+                            <div href="tel:123456789" class="contact__subtitle">08:00am to 8:00pm</div>
+                        </div>
+                        <div class="contact__item">
+                            <img src="img/contact/3.png" alt="">
+                            <div class="contact__text">Drop us an email</div>
+                            <a href="mailto:help@yourdomain.com" class="contact__subtitle"><span>help@yourdomain.com</span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Purchase-->
+
+        <section class="purchase">
+            <div class="container">
+                <div class="purchase__inner wow flipInX" data-wow-duration="2s" data-wow-offset="50">
+                    <div class="purchase__text">
+                        <h4 class="purchase__title">TRY OUR SERVICES RIGHT NOW</h4>
+                        <div class="purchase__subtitle">The most appealing part of the theme it’s very clear and light. And it reavels invidual.</div>
+                    </div>
+                    <button class="btn purchase__btn" data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;">Purchase Now</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+                    <img src="img/nav-logo.png" alt="">
+                    <div class="footer__copyright">
+                        &copy; 2016 Infinite <br> Designed by <span>Naveen</span>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div style="display: none;" id="animatedModal" class="animated-modal">
+        <h2>Fill in your <span>details</span></h2>
+        <input type="name" placeholder="Your name">
+        <input type="text" placeholder="Your phone number">
+        <textarea name="textarea" placeholder="Your purchase"></textarea>
+        <input type="submit" class="btn" value="Submit" data-fancybox data-src="#modal1" href="javascript:;">
+
+        <div style="display: none;" id="modal1" class="modal1">
+            <h2>Thanks!</h2>
+            <p>We will contact you shortly!</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!--    <script src="js/masonry.pkgd.min.js"></script>-->
+    <script src="https://kit.fontawesome.com/7186e5120c.js" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

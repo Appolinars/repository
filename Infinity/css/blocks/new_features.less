@@ -1,0 +1,131 @@
+// main: ../style.less
+
+.new_features {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    
+    @media @tablet {
+        padding: 60px;
+    }
+
+    @media @mobile {
+        padding: 35px;
+    }
+    
+    &__inner {
+        display: flex;
+    justify-content: space-between;
+    }
+    
+    &__img {
+        width: 45%;
+        
+        @media @tablet {
+            display: none;
+        }
+    }
+    
+    &__content {
+        width: 45%;
+        
+        @media @tablet {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    &__title {
+        font-size: 33px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #4c4c4c;
+        margin-bottom: 20px;
+    }
+    
+    &__subtitle {
+        font-size: 33px;
+        color: #939598;
+        margin-bottom: 25px;
+        
+        span {
+            color: @green;
+        }
+    }
+    
+    &__text {
+        font-size: 15px;
+        font-weight: 300;
+        color: #c1b0b3;
+        margin-bottom: 50px;
+        
+        @media @mobile {
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__list {
+        margin-bottom: 85px;
+        
+        @media @mobile {
+            margin-bottom: 30px;
+        }
+            
+        ul {
+            list-style: none;
+            list-style-position: inside;
+            column-count: 2;
+            font-size: 14px;
+            color: #8d7a7a;
+            
+            @media @mobile-sm {
+                 column-count: 1;   
+            }
+        }
+        
+        li {
+            font-size: 16px;
+            line-height: 2;
+            padding-left: 25px;
+            background: url(../img/new_features_list.png) left no-repeat;
+            
+            @media @tablet {
+                padding-left: 0;
+                margin-left: 30px;
+            }
+            
+            @media @mobile-sm {
+                margin-left: 0;
+                background-position: 5%;
+            }
+                
+        }
+    }
+    
+    &__footer {
+        button {
+            padding: 0 41px;
+            transition: background .2s linear;
+            
+            &:hover {
+                background-color: #000;
+            }
+        }
+        
+        a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #afb0b3;
+            margin-left: 25px;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+            
+            @media @mobile-sm {
+                display: block;
+                margin-left: 0;
+                margin-top: 8px;
+            }
+        }
+    }
+}

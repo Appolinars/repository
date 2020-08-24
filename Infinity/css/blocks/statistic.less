@@ -1,0 +1,130 @@
+// main: ../style.less
+
+.statistic {
+    padding: 80px 0 90px;
+    background-color: #141519;
+    color: #f9f9f9;
+
+    @media @tablet {
+        padding: 60px 0;
+    }
+
+    @media @mobile {
+        padding: 35px 0;
+    }
+
+    &__title {
+        font-size: 27px;
+        margin-bottom: 40px;
+        text-align: center;
+
+        @media @mobile {
+            font-size: 23px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+
+        @media @mobile {
+            flex-wrap: wrap;
+
+        }
+    }
+
+    &__item {
+        text-align: center;
+        position: relative;
+
+        @media @mobile {
+            width: 50%;
+            margin-bottom: 15px;
+        }
+
+        @media @mobile-sm {
+            width: 100%;
+        }
+    }
+
+    &__logo {
+        img {
+            margin: 0 auto;
+
+        }
+    }
+
+    &__count {
+        font-size: 45px;
+        margin: 15px 0 25px;
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+
+    .slick-arrow {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        font-size: 33px;
+        color: @white;
+
+        &.slick-disabled {
+            color: #5f5e5e;
+        }
+
+    }
+
+    .slick-prev {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        z-index: 100;
+        animation: arrow-prev 1.5s infinite ease;
+
+        &.slick-disabled {
+            animation: 0;
+        }
+
+        @keyframes arrow-prev {
+            0% {
+                left: 14px;
+            }
+
+            50% {
+                left: 0;
+            }
+
+            100% {
+                left: 14px;
+            }
+        }
+    }
+
+    .slick-next {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        z-index: 100;
+        animation: arrow-next 1.5s infinite ease;
+
+        &.slick-disabled {
+            animation: 0;
+        }
+
+        @keyframes arrow-next {
+            0% {
+                right: 14px;
+            }
+
+            50% {
+                right: 0;
+            }
+
+            100% {
+                right: 14px;
+            }
+        }
+    }
+}

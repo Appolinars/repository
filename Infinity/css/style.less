@@ -1,0 +1,110 @@
+// compress: true
+
+html,
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    font-size: 1em;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    background: @green;
+    color: @white;
+    border: 0;
+    outline: 0;
+    height: 50px;
+    padding: 0 35px;
+    cursor: pointer;
+}
+
+main {
+    overflow: hidden;
+}
+
+/*Blocks
+==========================================*/
+
+@import "blocks/intro";
+@import "blocks/nav";
+@import "blocks/section_header";
+@import "blocks/wedo";
+@import "blocks/contents";
+@import "blocks/services";
+@import "blocks/features";
+@import "blocks/works";
+@import "blocks/team";
+@import "blocks/new_features";
+@import "blocks/statistic";
+@import "blocks/subscribe";
+@import "blocks/buy";
+@import "blocks/packages";
+@import "blocks/getit";
+@import "blocks/testimonial";
+@import "blocks/partners";
+@import "blocks/contact";
+@import "blocks/purchase";
+@import "blocks/footer";
+@import "blocks/modal";
+
+
+/*Vars
+==========================================*/
+
+@green: #1abc9c;
+@white: #fff;
+@mobile-sm: ~"(max-width:565px)";
+@mobile: ~"(max-width:767px)";
+@tablet: ~"(max-width:991px)";
+@notebook: ~"(max-width:1199px)";

@@ -1,0 +1,138 @@
+// main: ../style.less
+
+.wedo {
+    padding: 100px 0;
+    border-bottom: 1px solid #dddddd;
+    
+    @media @tablet {
+        padding: 60px;
+    }
+    
+    @media @mobile {
+        padding: 35px 0 15px;
+    }
+    
+    .slick-arrow {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        font-size: 33px;
+        color: #000;
+
+        &.slick-disabled {
+            color: #818181;
+        }
+
+    }
+
+    .slick-prev {
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        z-index: 100;
+        animation: arrow-prev 1.5s infinite ease;
+
+        &.slick-disabled {
+            animation: 0;
+        }
+
+        @keyframes arrow-prev {
+            0% {
+                left: 14px;
+            }
+
+            50% {
+                left: 0;
+            }
+
+            100% {
+                left: 14px;
+            }
+        }
+    }
+
+    .slick-next {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        z-index: 100;
+        animation: arrow-next 1.5s infinite ease;
+
+        &.slick-disabled {
+            animation: 0;
+        }
+
+        @keyframes arrow-next {
+            0% {
+                right: 14px;
+            }
+
+            50% {
+                right: 0;
+            }
+
+            100% {
+                right: 14px;
+            }
+        }
+    }
+}
+
+.wedo__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    
+    @media @tablet {
+        justify-content: center;
+    }
+}
+
+.wedo__item {
+    width: 33.333%;
+    padding: 0 15px;
+    text-align: center;
+    
+    img {
+        margin: 0 auto;
+    }
+    
+    img:first-child {
+        height: 70px;
+    }
+    
+    @media @tablet {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    @media @mobile {
+        width: 100%;
+        max-width: 600px;
+        padding: 0;
+    }
+    
+}
+
+.wedo__title {
+    font-size: 27px;
+    color: #4c4c4c;
+    letter-spacing: 0.005em;
+    margin-top: 40px;
+    
+    @media @mobile {
+        margin-top: 15px;
+    }
+}
+
+.wedo__text {
+    font-size: 16px;
+    color: #939598;
+    margin-top: 20px;
+    
+    @media @mobile {
+        margin-top: 15px;
+    }
+    
+}

@@ -1,0 +1,316 @@
+// main: ../style.less
+
+.packages {
+    padding: 140px 0 110px;
+    background-color: #f8f9fb;
+
+    @media @tablet {
+        padding: 60px 0;
+    }
+
+    @media @mobile {
+        padding: 35px 0;
+    }
+
+    .slick-arrow {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        font-size: 70px;
+        color: #000;
+
+        &.slick-disabled {
+            color: #818181;
+        }
+
+        @media @mobile {
+            font-size: 50px;
+        }
+
+    }
+
+    .slick-prev {
+        position: absolute;
+        z-index: 100;
+        left: 50px;
+
+        @media @mobile {
+            left: 20px;
+        }
+        
+        @media @mobile-sm {
+            bottom: -40px;
+        }
+
+    }
+
+    .slick-next {
+        position: absolute;
+        z-index: 100;
+        right: 50px;
+
+        @media @mobile {
+            right: 20px;
+        }
+        
+        @media @mobile-sm {
+            top: -40px;
+        }
+    }
+}
+
+.packages__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media @tablet {
+        align-items: center;
+    }
+}
+
+.slide__helper {
+    width: 31%;
+
+    @media @tablet {
+        padding: 10px 0;
+
+    }
+    
+    @media @mobile-sm {
+        margin: 0 10px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.packages__item {
+    padding-top: 1px;
+    width: 100%;
+    min-height: 650px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.1);
+    transition: all .2s linear;
+
+    @media @tablet {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    @media @mobile-sm {
+        min-height: 510px;
+        padding: 1px 5px;
+    }
+
+
+    &:hover {
+        background-color: @green;
+        box-shadow: none;
+
+        .packages__kind {
+            color: #fff;
+
+        }
+
+        .packages__cost {
+            color: #fff;
+            background-color: @green;
+            border-color: #fff;
+        }
+
+        .packages__subtitle {
+            color: #fff;
+        }
+
+        .packages__adv {
+            color: #fff;
+        }
+
+        .packages__btn {
+            color: @green;
+            background-color: #fff;
+        }
+
+        .packages__bottom {
+            color: #fff;
+        }
+
+    }
+}
+
+.packages__kind {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #4c4c4c;
+    letter-spacing: 0.001em;
+    margin: 40px 0 20px;
+
+    @media @mobile-sm {
+        margin: 20px 0;
+    }
+}
+
+.packages__cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto 23px;
+    font-size: 29px;
+    color: #4c4c4c;
+    letter-spacing: 0.001em;
+    background-color: #fbfbfb;
+
+    border: 5px double #e0e0e0;
+    border-radius: 50%;
+    
+    @media @mobile-sm {
+        margin-bottom: 10px;
+    }
+}
+
+.packages__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: #939598;
+    margin-bottom: 35px;
+    
+    @media @mobile-sm {
+        margin-bottom: 15px;
+    }
+}
+
+.packages__adv {
+    font-size: 16px;
+    color: #4c4c4c;
+    margin-bottom: 22px;
+
+    span {
+        font-weight: 700;
+    }
+    
+    @media @mobile-sm {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+.packages__btn {
+    margin-top: 9px;
+    padding: 0 42px;
+
+    &:hover {
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+.packages__bottom {
+    margin-top: 32px;
+    font-size: 16px;
+    color: #928b8b;
+    line-height: 1.7;
+    
+    @media @mobile-sm {
+        margin-top: 15px;
+    }
+}
+
+.packages__footer {
+    margin-top: 17px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #939598;
+    text-align: center;
+
+    span {
+        color: @green;
+    }
+    
+    @media @mobile-sm {
+        margin-top: 30px;
+    }
+}

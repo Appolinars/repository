@@ -1,0 +1,161 @@
+// main: ../style.less
+
+.contents {
+    padding: 100px 0 50px;
+    border-bottom: 1px solid #dddddd;
+    
+    @media @tablet {
+        padding: 60px 0 30px;
+    }
+    
+    @media @mobile {
+        padding: 35px 0 15px;
+    }
+}
+
+.contents__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media @notebook {
+        justify-content: space-around;
+    }
+}
+
+.contents__slider {
+    max-width: 750px;
+    max-height: 500px;
+    width: 100%;
+
+    @media @notebook {
+        max-width: 650px;
+    }
+
+    @media @tablet {
+        max-width: 750px;
+    }
+
+    .slider__item {
+
+        img {
+            position: relative;
+
+        }
+
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+
+
+        button {
+            border: 0;
+            outline: 0;
+            font-size: 0;
+            color: transparent;
+            cursor: pointer;
+            width: 11px;
+            height: 11px;
+            background-color: @green;
+            border-radius: 50%;
+        }
+
+        .slick-active {
+            button {
+                background-color: #000;
+            }
+        }
+    }
+}
+
+.contents__accordeon {
+    max-width: 360px;
+    width: 100%;
+
+    @media @notebook {
+        max-width: 280px;
+    }
+
+    @media @tablet {
+        max-width: none;
+        margin-top: 25px;
+    }
+
+}
+
+.accordeon__item {
+    border: 1px solid #dcdddf;
+
+    input {
+        display: none;
+    }
+
+    .tab__content {
+        height: 0;
+        font-size: 0;
+        line-height: 1.8;
+        color: #4c4c4c;
+        border-top: 1px solid #dcdddf;
+        transition: all .2s linear;
+    }
+
+    .tab__title {
+        font-size: 14px;
+        color: #000;
+        letter-spacing: 0.215em;
+        padding: 20px 25px 30px;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 300;
+        cursor: pointer;
+        transition: all .2s linear;
+
+        span {
+            font-size: 10px;
+            font-weight: 300;
+            color: #dddddd;
+            display: block;
+            margin-top: 10px;
+            transition: all .2s linear;
+        }
+
+        @media @mobile-sm {
+            padding: 15px;
+        }
+    }
+
+    :checked ~ .tab__content {
+        height: auto;
+        padding: 15px 25px 28px;
+        font-size: 14px;
+
+        @media @mobile-sm {
+            padding: 15px;
+        }
+    }
+
+    :checked ~ .tab__title {
+        font-size: 10px;
+
+        span {
+            font-size: 20px;
+            color: #000;
+        }
+
+    }
+
+}
+
+.accordeon__text {
+    font-size: 16px;
+    color: #939598;
+    margin-top: 40px;
+
+    @media @mobile-sm {
+        margin-top: 20px;
+    }
+}

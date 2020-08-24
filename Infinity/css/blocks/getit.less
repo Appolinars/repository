@@ -1,0 +1,62 @@
+// main: ../style.less
+
+.getit {
+    padding: 90px 0;
+    
+    @media @tablet {
+        padding: 60px 0;
+    }
+    
+    @media @mobile {
+        padding: 35px 0;
+    }
+    
+    &__inner {
+        text-align: center;
+    }
+    
+    &__title {
+        font-size: 57px;
+        font-weight: 300;
+        color: #4c4c4c;
+        margin-bottom: 30px;
+        
+        @media @mobile-sm {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__subtitle {
+        font-size: 16px;
+        color: #939598;
+        letter-spacing: 0.002em;
+        margin-bottom: 50px;
+        
+        span {
+            color: @green;
+        }
+        
+        @media @mobile-sm {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__options {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__item {
+        margin-right: 15px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        @media @mobile-sm {
+            margin-right: 5px;
+        }
+    }
+}
