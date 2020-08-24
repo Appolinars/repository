@@ -1,0 +1,93 @@
+// main: ../style.less
+
+.works {
+    margin: 4rem 0;
+}
+
+.works__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.works__nav-link {
+    font-size: 1.2rem;
+    color: rgba(@black, .7);
+    text-decoration: none;
+    margin: 1.2rem;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.5rem;
+}
+
+.portfolio__col {
+    flex-basis: 33.333%;
+    padding: 1.5rem;
+    
+    @media @mobile {
+        flex-basis: 50%;
+    }
+    
+    @media @mobile-sm {
+        flex-basis: 100%;
+    }
+}
+
+.work {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(#000, .25);
+    
+    transition: box-shadow .2s linear;
+    
+    &:hover {
+        box-shadow: 0 0 25px rgba(#000, .25);
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    @media @mobile {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+}
+
+.work__content {
+    padding: 1.5rem 1.2rem;
+    color: @black;
+    text-transform: uppercase;
+}
+
+.work__cat {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.work__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

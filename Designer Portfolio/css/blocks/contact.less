@@ -1,0 +1,112 @@
+// main: ../style.less
+
+.contact {
+    display: flex;
+    background: url('https://placeimg.com/480/680/nature') right center no-repeat;
+
+    @media @tablet {
+        background: none;
+    }
+}
+
+.contact__left {
+    width: 47%;
+    padding: 3rem;
+
+    @media @tablet {
+        width: 100%;
+    }
+
+    @media @mobile-sm {
+        padding: 3rem 1rem;
+    }
+}
+
+.contact__info {
+    padding: 0;
+    margin: 3rem 0 4.5rem;
+    list-style: none;
+
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: @black;
+
+    img {
+        display: inline-block;
+    }
+
+    @media @mobile-sm {
+        margin: 2rem 0 2.5rem;
+    }
+}
+
+.contact__info--item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.9rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact__info--icon {
+    margin-right: 0.8rem;
+}
+
+.form__group {
+    margin-bottom: 2.7rem;
+}
+
+.form__label {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.form__input,
+.form__textarea {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    outline: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border: 1px solid fade(#707070, 30%);
+    border-radius: 2.7em;
+    padding: 1.6em 2.8em;
+    transition: border-color .2s linear;
+
+    &:focus {
+        border-color: #61b8e6
+    }
+
+    &::placeholder {
+        color: @black;
+    }
+
+    @media @tablet {
+        width: 70%;
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
+
+
+}
+
+.form__textarea {
+    resize: none;
+    height: 200px;
+    width: 360px;
+
+    @media @tablet {
+        width: 100%;
+    }
+    
+    @media @mobile-sm {
+        height: 150px;
+    }
+}

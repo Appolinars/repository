@@ -1,0 +1,155 @@
+// main: ../style.less
+
+.timeline {
+    display: flex;
+    margin: 6.3rem auto;
+    width: 100%;
+    max-width: 768px;
+
+    color: @black;
+
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: @black;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+
+    @media @mobile-sm {
+        margin: 4rem auto;
+    }
+}
+
+.timeline__col {
+    width: 50%;
+
+    &--left {
+        text-align: right;
+        padding-right: 4.8rem;
+
+        @media @mobile-sm {
+            padding-right: 1rem;
+        }
+    }
+
+    &--right {
+        text-align-last: auto;
+        padding-left: 4.8em;
+
+        @media @mobile-sm {
+            padding-left: 1rem;
+        }
+    }
+}
+
+.timeline__title {
+    margin-bottom: 3.1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media @mobile-sm {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.timeline__item {
+    margin-bottom: 3.8rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media @mobile-sm {
+        margin-bottom: 2rem;
+    }
+}
+
+.timeline__date {
+    display: block;
+    margin-bottom: 1.2rem;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    
+    @media @mobile-sm {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.timeline__subtitle {
+    margin-bottom: 0.3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.timeline__postion {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.timeline__text {
+    margin-top: .8rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: @gray;
+    line-height: 1.5;
+
+    @media @mobile-sm {
+        line-height: 1.2;
+        font-size: 1.1rem;
+    }
+}
+
+.progress-bar {
+    margin-bottom: 3.1rem;
+    
+    @media @mobile-sm {
+        margin-bottom: 2rem;
+    }
+}
+
+.progress-bar__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    @media @mobile {
+        display: block;
+    }
+}
+
+.progress-bar__right {
+    padding-right: 7.5rem;
+
+    @media @mobile {
+        margin-top: 0.5rem;
+    }
+}
+
+.progress-bar__title {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.progress-bar__bar {
+    width: 139px;
+    height: 6px;
+    background-color: #EFEFEF;
+    
+    @media @mobile-sm {
+        width: 110px;
+    }
+}
+
+.progress-bar__progress {
+    height: 100%;
+    background-color: @gray;
+}
