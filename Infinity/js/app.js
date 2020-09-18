@@ -141,35 +141,7 @@ $('.btn__filter').click(function (event) {
 /*Анимация появления блоков при скролле*/
 
 wow = new WOW({
-    mobile: false
+    mobile: true
 })
 wow.init();
 
-
-/*Когда мало айтемов, ставит контент в столбец без заданной ширины + не работает flex*/
-
-//    $('.works__list').masonry({
-//        
-//  itemSelector: '.works__item',
-//        horizontalOrder: true,
-//        columnWidth: '.works__item',
-//        percentPosition: true
-//});
-//
-//$("#works-filter li").click(function() {
-//    var group = $(this).data('category');
-//	var group_class = "." + group;
-//	
-//    if(group == "*"){
-//        $(".works__item").show();
-//	    $('.works__list').masonry('layout');
-//       }
-//    else if(group != "") {
-//		$(".works__item").hide();
-//		$(group_class).show();
-//		$('.works__list').masonry('layout');
-//	} else {
-//		$(".works__item").show();
-//		$('.works__list').masonry('layout');
-//	}
-//});
