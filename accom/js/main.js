@@ -99,9 +99,9 @@ $(function () {
 
         setTimeout(function () {
             $(modalID).find(".modal__dialog").css({
-                transform: "rotateX(0)"
+                transform: "scale(1)"
             });
-        }, 200);
+        }, 500);
 
 
     });
@@ -115,14 +115,14 @@ $(function () {
         let modalParent = $this.parents('.modal');
 
         modalParent.find(".modal__dialog").css({
-            transform: "rotateX(90deg)"
+            transform: "scale(0)"
         });
 
         setTimeout(function () {
             modalParent.removeClass('show');
             $("body").removeClass('no-scroll');
             $(".wrapper").removeClass('no-scroll');
-        }, 200);
+        }, 500);
 
     });
 
@@ -131,14 +131,14 @@ $(function () {
     $(".modal").on("click", function (event) {
         let $this = $(this);
         $this.find(".modal__dialog").css({
-            transform: "rotateX(90deg)"
+            transform: "scale(0)"
         });
 
         setTimeout(function () {
             $this.removeClass('show');
             $("body").removeClass('no-scroll');
             $(".wrapper").removeClass('no-scroll');
-        }, 200);
+        }, 500);
 
     });
 
@@ -160,11 +160,11 @@ $(function () {
 
             let href = this.getAttribute('href').substring(1);
             let scrollTarget = document.getElementById(href);
-            let elementPosition = scrollTarget.getBoundingClientRect().top;
+            let elementPosition = $(scrollTarget).offset().top;
 
             $('html, body').animate({
                 scrollTop: elementPosition
-            }, 700);
+            }, 600);
 
             document.querySelector('.nav').classList.remove('active');
         });
