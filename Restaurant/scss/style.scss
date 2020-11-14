@@ -66,6 +66,10 @@ svg path {
     stroke-width: inherit;
 }
 
+button {
+    padding: 0;
+}
+
 $main-color: #ea0d0d;
 $alt-font: "Playfair Display", serif;
 
@@ -545,7 +549,7 @@ textarea {
     display: block;
     margin-bottom: 10px;
     padding: 20px;
-    border: 0;
+    border: 1px solid transparent;
     outline: 0;
     background: #e5e5e5;
     border-radius: 5px;
@@ -556,7 +560,7 @@ textarea {
         color: rgba(51, 51, 51, 0.5);
     }
     &:focus{
-        border: 1px solid rgb(36, 57, 240)
+        border-color: rgb(36, 57, 240);
     }
 }
 
@@ -651,13 +655,16 @@ input {
     border: 0;
     background-color: $main-color;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 20px;
     color: #ffffff;
     border-radius: 5px;
     padding: 15px 0;
     cursor: pointer;
-    
+    transition: .5s;
+    &:hover {
+        box-shadow: 0 0 8px 2px $main-color;
+    }
 }
 
 .book__info {
@@ -1055,15 +1062,21 @@ input {
             max-width: none;
         }
     }
- 
-    .team,
-    .food{
-        .section__photo{
-            &::after{
-                display: none;
-            }
+
+    .section__photo{
+        &::after{
+            display: none;
         }
     }
+
+    // .team,
+    // .food{
+    //     .section__photo{
+    //         &::after{
+    //             display: none;
+    //         }
+    //     }
+    // }
 
     .team__item,
     .food__item{
@@ -1159,12 +1172,6 @@ input {
 
     .about{
         padding: 50px 0;
-    }
-
-    .section__photo{
-        &::after{
-            display: none;
-        }
     }
 
     .inner{
