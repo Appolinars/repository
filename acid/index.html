@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Acid</title>
+</head>
+
+<body>
+
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+            </path>
+        </svg>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <ul class="header__social social">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <?xml version="1.0"?>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="25" height="30" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"
+                                        fill="#ffffff" data-original="#000000" style="" class="" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="29" x="0" y="0"
+                                viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"
+                                        fill="#ffffff" data-original="#000000" style="" class="" />
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"
+                                        fill="#ffffff" data-original="#000000" style="" class="" />
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"
+                                        fill="#ffffff" data-original="#000000" style="" class="" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="32" height="26" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z"
+                                                fill="#ffffff" data-original="#000000" style="" class="" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="28" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"
+                                        fill="#ffffff" data-original="#000000" style="" />
+                                    <path xmlns="http://www.w3.org/2000/svg" d="m.396 7.977h4.976v16.023h-4.976z"
+                                        fill="#ffffff" data-original="#000000" style="" />
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"
+                                        fill="#ffffff" data-original="#000000" style="" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__cursor"></li>
+                </ul>
+                <a href="#" class="header__logo">
+                    <img src="images/logo.svg" alt="/" class="header__logo-img">
+                </a>
+                <button class="header__btn modal__btn">Contact us</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__content">
+                        <h1 class="intro__content-title">Acid company</h1>
+                        <p class="intro__content-clients">There are <span class="count"></span> happy clients</p>
+                        <p class="intro__content-subtitle">
+                            Descripción del producto, lorem ipsum dolor sit amet,
+                            consetetur sadipscing elitr, sed diam nonumy
+                        </p>
+                        <button class="intro__content-btn btn modal__btn">Call to action</button>
+                    </div>
+                    <div class="intro__slider">
+                        <div class="intro__slider-conatiner swiper-container">
+                            <div class="intro__slider-wrapper swiper-wrapper">
+                                <div class="intro__slider-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="images/intro-slider1.webp" type="image/webp">
+                                        <img class="intro__slider-slide__person" src="images/intro-slider1.png" alt="/">
+                                    </picture>
+                                    <div class="intro__slider-slide__product">
+                                        <picture>
+                                            <source srcset="images/intro-slider-product.webp" type="image/webp">
+                                            <img src="images/intro-slider-product.png" alt="/">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="intro__slider-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="images/intro-slider2.webp" type="image/webp">
+                                        <img class="intro__slider-slide__person" src="images/intro-slider2.png" alt="/">
+                                    </picture>
+                                    <div class="intro__slider-slide__product">
+                                        <picture>
+                                            <source srcset="images/intro-slider-product.webp" type="image/webp">
+                                            <img src="images/intro-slider-product.png" alt="/">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="intro__slider-slide swiper-slide">
+                                    <picture>
+                                        <source srcset="images/intro-slider3.webp" type="image/webp">
+                                        <img class="intro__slider-slide__person" src="images/intro-slider3.png" alt="/">
+                                    </picture>
+                                    <div class="intro__slider-slide__product">
+                                        <picture>
+                                            <source srcset="images/intro-slider-product.webp" type="image/webp">
+                                            <img src="images/intro-slider-product.png" alt="/">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro__slider-button-prev swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="25" height="20" x="0"
+                                    y="0" viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="">
+                                    <g>
+                                        <path xmlns="http://www.w3.org/2000/svg" style=""
+                                            d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554  c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587  c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"
+                                            fill="#ffffff" data-original="#1e201d" class="" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="intro__slider-button-next swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="25" height="20" x="0"
+                                    y="0" viewBox="0 0 268.832 268.832" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="">
+                                    <g transform="matrix(1,0,0,1,0,0)">
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M265.171,125.577l-80-80c-4.881-4.881-12.797-4.881-17.678,0c-4.882,4.882-4.882,12.796,0,17.678l58.661,58.661H12.5   c-6.903,0-12.5,5.597-12.5,12.5c0,6.902,5.597,12.5,12.5,12.5h213.654l-58.659,58.661c-4.882,4.882-4.882,12.796,0,17.678   c2.44,2.439,5.64,3.661,8.839,3.661s6.398-1.222,8.839-3.661l79.998-80C270.053,138.373,270.053,130.459,265.171,125.577z"
+                                                fill="#ffffff" data-original="#000000" style="" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__video">
+                        <a href="#" class="about__video-box">
+                            <picture>
+                                <source srcset="images/about-video.webp" type="image/webp">
+                                <img src="images/about-video.jpg" alt="/" class="about-video">
+                            </picture>
+                            <img class="about__video-play" src="images/play-button.svg" alt="/">
+                            <picture>
+                                <source srcset="images/about-smoke-right.webp" type="image/webp">
+                                <img src="images/about-smoke-right.png" alt="/"
+                                    class="about__smoke about__smoke--right">
+                            </picture>
+                            <picture>
+                                <source srcset="images/about-smoke-left.webp" type="image/webp">
+                                <img src="images/about-smoke-left.png" alt="/" class="about__smoke about__smoke--left">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="about__info">
+                        <h2 class="about__info-title title">About our <span>company</span></h2>
+                        <p class="about__info-subtitle">Subtítulo del contenido</p>
+                        <p class="about__info-text">Breve párrafo del contenido, lorem ipsum dolor sit amet, consetetur
+                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            erat, sed diam voluptua. At vero eos et accusam dolores.</p>
+                        <button class="btn about__info-btn modal__btn">Call to action</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="container">
+                <h2 class="title">Some our <span>events</span></h2>
+                <ul class="events__grid">
+                    <li class="events__grid-box">
+                        <div class="events__grid-content">
+                            <p class="events__grid-content-title" data-text='Event name'>Event name</p>
+                            <picture>
+                                <source srcset="images/events-1.webp" type="image/webp">
+                                <img class="events__grid-content-img" src="images/events-1.jpg" alt="/">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="events__grid-box">
+                        <div class="events__grid-content">
+                            <p class="events__grid-content-title">Event name</p>
+                            <picture>
+                                <source srcset="images/events-2.webp" type="image/webp">
+                                <img class="events__grid-content-img" src="images/events-2.jpg" alt="/">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="events__grid-box">
+                        <div class="events__grid-content">
+                            <p class="events__grid-content-title">Event name</p>
+                            <picture>
+                                <source srcset="images/events-3.webp" type="image/webp">
+                                <img class="events__grid-content-img" src="images/events-3.jpg" alt="/">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="events__grid-box">
+                        <div class="events__grid-content">
+                            <p class="events__grid-content-title">Event name</p>
+                            <picture>
+                                <source srcset="images/events-4.webp" type="image/webp">
+                                <img class="events__grid-content-img" src="images/events-4.jpg" alt="/">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="events__grid-box">
+                        <div class="events__grid-content">
+                            <p class="events__grid-content-title">Event name</p>
+                            <picture>
+                                <source srcset="images/events-5.webp" type="image/webp">
+                                <img class="events__grid-content-img" src="images/events-5.jpg" alt="/">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="events__grid-box">
+                        <div class="events__grid-content">
+                            <p class="events__grid-content-title">Event name</p>
+                            <picture>
+                                <source srcset="images/events-6.webp" type="image/webp">
+                                <img class="events__grid-content-img" src="images/events-6.jpg" alt="/">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="events__grid-box">
+                        <div class="events__grid-content">
+                            <p class="events__grid-content-title">Event name</p>
+                            <picture>
+                                <source srcset="images/events-7.webp" type="image/webp">
+                                <img class="events__grid-content-img" src="images/events-7.jpg" alt="/">
+                            </picture>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <h2 class="title"><span>Products</span> that we made</h2>
+                <div class="products__slider-container swiper-container">
+                    <div class="products__slider-wrapper swiper-wrapper">
+                        <div class="products__slider-slide swiper-slide">
+                            <picture>
+                                <source srcset="images/products-1.webp" type="image/webp">
+                                <img src="images/products-1.png" alt="/">
+                            </picture>
+                            <p class="products__slider-name">NOMBRE DEL PRODUCTO</p>
+                            <p class="products__slider-price">$99.999</p>
+                            <button class="products__slider-btn modal__btn">View details</button>
+                            <p class="products__slider-decor">R e f<span> 2 3 0</span></p>
+                        </div>
+                        <div class="products__slider-slide swiper-slide">
+                            <picture>
+                                <source srcset="images/products-2.webp" type="image/webp">
+                                <img src="images/products-2.png" alt="/">
+                            </picture>
+                            <p class="products__slider-name">NOMBRE DEL PRODUCTO</p>
+                            <p class="products__slider-price">$29.92</p>
+                            <button class="products__slider-btn modal__btn">View details</button>
+                            <p class="products__slider-decor">V o q<span> 4 8 9</span></p>
+                        </div>
+                        <div class="products__slider-slide swiper-slide">
+                            <picture>
+                                <source srcset="images/products-3.webp" type="image/webp">
+                                <img src="images/products-3.png" alt="/">
+                            </picture>
+                            <p class="products__slider-name">NOMBRE DEL PRODUCTO</p>
+                            <p class="products__slider-price">$120.9</p>
+                            <button class="products__slider-btn modal__btn">View details</button>
+                            <p class="products__slider-decor">S W d<span> 7 5 2</span></p>
+                        </div>
+                        <div class="products__slider-slide swiper-slide">
+                            <picture>
+                                <source srcset="images/products-4.webp" type="image/webp">
+                                <img src="images/products-4.png" alt="/">
+                            </picture>
+                            <p class="products__slider-name">NOMBRE DEL PRODUCTO</p>
+                            <p class="products__slider-price">$180.9</p>
+                            <button class="products__slider-btn modal__btn">View details</button>
+                            <p class="products__slider-decor">H t z<span> 3 4 9</span></p>
+                        </div>
+                        <div class="products__slider-slide swiper-slide">
+                            <picture>
+                                <source srcset="images/products-5.webp" type="image/webp">
+                                <img src="images/products-5.png" alt="/">
+                            </picture>
+                            <p class="products__slider-name">NOMBRE DEL PRODUCTO</p>
+                            <p class="products__slider-price">$240.999</p>
+                            <button class="products__slider-btn modal__btn">View details</button>
+                            <p class="products__slider-decor">M p q<span> 8 6 4</span></p>
+                        </div>
+                    </div>
+                    <div class="products__slider-pagination swiper-pagination"></div>
+                    <div class="products__slider-prev swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="25" height="20" x="0" y="0"
+                            viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                            class="">
+                            <g>
+                                <path xmlns="http://www.w3.org/2000/svg" style=""
+                                    d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554  c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587  c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"
+                                    fill="#ffffff" data-original="#1e201d" class="" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="products__slider-next swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="25" height="20" x="0" y="0"
+                            viewBox="0 0 268.832 268.832" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                            class="">
+                            <g transform="matrix(1,0,0,1,0,0)">
+                                <g xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M265.171,125.577l-80-80c-4.881-4.881-12.797-4.881-17.678,0c-4.882,4.882-4.882,12.796,0,17.678l58.661,58.661H12.5   c-6.903,0-12.5,5.597-12.5,12.5c0,6.902,5.597,12.5,12.5,12.5h213.654l-58.659,58.661c-4.882,4.882-4.882,12.796,0,17.678   c2.44,2.439,5.64,3.661,8.839,3.661s6.398-1.222,8.839-3.661l79.998-80C270.053,138.373,270.053,130.459,265.171,125.577z"
+                                        fill="#ffffff" data-original="#000000" style="" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <h2 class="title">Our amazing<span> team</span></h2>
+                <div class="team__inner">
+                    <div class="team__card">
+                        <div class="team__card-img">
+                            <picture>
+                                <source srcset="images/team-1.webp" type="image/webp">
+                                <img src="images/team-1.jpg" alt="/">
+                            </picture>
+                        </div>
+                        <div class="team__card-content">
+                            <h3 class="team__card-name">John Doe</h3>
+                            <p class="team__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptas, asperiores!</p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <?xml version="1.0"?>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="25" height="30"
+                                            x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <g>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="29"
+                                            x="0" y="0" viewBox="0 0 511 511.9"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                            <g>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="32" height="26"
+                                            x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <g>
+                                                <g xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z"
+                                                            fill="#ffffff" data-original="#000000" style="" class="" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="28"
+                                            x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve">
+                                            <g>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"
+                                                    fill="#ffffff" data-original="#000000" style="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m.396 7.977h4.976v16.023h-4.976z" fill="#ffffff"
+                                                    data-original="#000000" style="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"
+                                                    fill="#ffffff" data-original="#000000" style="" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team__card">
+                        <div class="team__card-img">
+                            <picture>
+                                <source srcset="images/team-2.webp" type="image/webp">
+                                <img src="images/team-2.jpg" alt="/">
+                            </picture>
+                        </div>
+                        <div class="team__card-content">
+                            <h3 class="team__card-name">Alex Anonymous</h3>
+                            <p class="team__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptas, asperiores!</p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <?xml version="1.0"?>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="25" height="30"
+                                            x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <g>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="29"
+                                            x="0" y="0" viewBox="0 0 511 511.9"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                            <g>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="32" height="26"
+                                            x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <g>
+                                                <g xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z"
+                                                            fill="#ffffff" data-original="#000000" style="" class="" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="28"
+                                            x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve">
+                                            <g>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"
+                                                    fill="#ffffff" data-original="#000000" style="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m.396 7.977h4.976v16.023h-4.976z" fill="#ffffff"
+                                                    data-original="#000000" style="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"
+                                                    fill="#ffffff" data-original="#000000" style="" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team__card">
+                        <div class="team__card-img">
+                            <picture>
+                                <source srcset="images/team-3.webp" type="image/webp">
+                                <img src="images/team-3.jpg" alt="/">
+                            </picture>
+                        </div>
+                        <div class="team__card-content">
+                            <h3 class="team__card-name">Fred Incognito</h3>
+                            <p class="team__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptas, asperiores!</p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <?xml version="1.0"?>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="25" height="30"
+                                            x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <g>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="29"
+                                            x="0" y="0" viewBox="0 0 511 511.9"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                            <g>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"
+                                                    fill="#ffffff" data-original="#000000" style="" class="" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="32" height="26"
+                                            x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <g>
+                                                <g xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path
+                                                            d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z"
+                                                            fill="#ffffff" data-original="#000000" style="" class="" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="28"
+                                            x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve">
+                                            <g>
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"
+                                                    fill="#ffffff" data-original="#000000" style="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m.396 7.977h4.976v16.023h-4.976z" fill="#ffffff"
+                                                    data-original="#000000" style="" />
+                                                <path xmlns="http://www.w3.org/2000/svg"
+                                                    d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"
+                                                    fill="#ffffff" data-original="#000000" style="" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2 class="title">Contact<span> us</span> form</h2>
+                <div class="contact__inner">
+                    <form class="contact__form">
+                        <div class="contact__form-row">
+                            <div class="contact__form-col">
+                                <div class="contact__form-inputBox">
+                                    <input type="text" class="contact__form-input" required>
+                                    <label class="contact__form-text">First Name</label>
+                                    <span class="contact__form-line"></span>
+                                </div>
+                            </div>
+                            <div class="contact__form-col">
+                                <div class="contact__form-inputBox">
+                                    <input type="text" class="contact__form-input" required>
+                                    <label class="contact__form-text">Last Name</label>
+                                    <span class="contact__form-line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__form-row">
+                            <div class="contact__form-col">
+                                <div class="contact__form-inputBox">
+                                    <input type="text" class="contact__form-input" required>
+                                    <label class="contact__form-text">E-mail</label>
+                                    <span class="contact__form-line"></span>
+                                </div>
+                            </div>
+                            <div class="contact__form-col">
+                                <div class="contact__form-inputBox">
+                                    <input type="text" class="contact__form-input" required>
+                                    <label class="contact__form-text">Mobile</label>
+                                    <span class="contact__form-line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__form-row">
+                            <div class="contact__form-col">
+                                <div class="contact__form-inputBox contact__form-textareaBox">
+                                    <textarea class="contact__form-textarea" required></textarea>
+                                    <label class="contact__form-text">Type your message...</label>
+                                    <span class="contact__form-line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__form-row">
+                            <button class="btn">Send letter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__social social">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <?xml version="1.0"?>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="25" height="30" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"
+                                        fill="#ffffff" data-original="#000000" style="" class="" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="29" x="0" y="0"
+                                viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"
+                                        fill="#ffffff" data-original="#000000" style="" class="" />
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"
+                                        fill="#ffffff" data-original="#000000" style="" class="" />
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"
+                                        fill="#ffffff" data-original="#000000" style="" class="" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="32" height="26" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <g xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z"
+                                                fill="#ffffff" data-original="#000000" style="" class="" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="30" height="28" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"
+                                        fill="#ffffff" data-original="#000000" style="" />
+                                    <path xmlns="http://www.w3.org/2000/svg" d="m.396 7.977h4.976v16.023h-4.976z"
+                                        fill="#ffffff" data-original="#000000" style="" />
+                                    <path xmlns="http://www.w3.org/2000/svg"
+                                        d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"
+                                        fill="#ffffff" data-original="#000000" style="" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__copy">
+                    Nombre de la marca &copy; 2020 - Todos los derechos reservados
+                </p>
+                <button class="footer__btn modal__btn">Contact Us</button>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal__form  modal">
+        <div class="modal__form-content modal__dialog flip-in-diag">
+            <div class="modal__form-close close_modal">+</div>
+            <form class="contact__form">
+                <div class="contact__form-row">
+                    <div class="contact__form-col">
+                        <div class="contact__form-inputBox">
+                            <input type="text" class="contact__form-input" required>
+                            <label class="contact__form-text">First Name</label>
+                            <span class="contact__form-line"></span>
+                        </div>
+                    </div>
+                    <div class="contact__form-col">
+                        <div class="contact__form-inputBox">
+                            <input type="text" class="contact__form-input" required>
+                            <label class="contact__form-text">Last Name</label>
+                            <span class="contact__form-line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form-row">
+                    <div class="contact__form-col">
+                        <div class="contact__form-inputBox">
+                            <input type="text" class="contact__form-input" required>
+                            <label class="contact__form-text">E-mail</label>
+                            <span class="contact__form-line"></span>
+                        </div>
+                    </div>
+                    <div class="contact__form-col">
+                        <div class="contact__form-inputBox">
+                            <input type="text" class="contact__form-input" required>
+                            <label class="contact__form-text">Mobile</label>
+                            <span class="contact__form-line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form-row">
+                    <div class="contact__form-col">
+                        <div class="contact__form-inputBox contact__form-textareaBox">
+                            <textarea class="contact__form-textarea" required></textarea>
+                            <label class="contact__form-text">Type your message...</label>
+                            <span class="contact__form-line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form-row">
+                    <button class="btn">Send letter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal__video  modal">
+        <div class="modal__video-content modal__dialog bounceIn">
+            <div class="modal__video-close close_modal">+</div>
+            <iframe width="560" height="515" src="https://www.youtube.com/embed/pLvsmho1lGA" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <div id="particles-js"></div>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
