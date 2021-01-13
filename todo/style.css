@@ -1,0 +1,192 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    overflow-x: hidden;
+    min-width: 320px;
+    padding-top: 40px;
+    background-color: #8f0500;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    font-size: 1em;
+    font-weight: inherit;
+}
+
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.box {
+    max-width: 400px;
+    min-height: 500px;
+    padding: 20px;
+    background-color: rgb(48, 47, 47);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.todo__input {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: rgb(31, 28, 28);
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+}
+
+.btn__add {
+    color: #fff;
+    background-color: rgb(247, 24, 24);
+    border-radius: 15px;
+    border: none;
+    padding: 5px 40px;
+    margin-bottom: 30px;
+    align-self: flex-start;
+}
+
+label {
+    padding: 0 60px 8px 25px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(27, 25, 25);
+    position: relative;
+}
+
+label+label {
+    margin-top: 20px;
+}
+
+.label__text {
+    position: relative;
+}
+
+.label__text:after {
+    content: '';
+    width: 0;
+    height: 1.5px;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    background-color: #fff;
+    transition: width .3s;
+}
+
+.label.label--crosed .label__text:after {
+    width: 100%;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+
+}
+
+.checkbox__style {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(247, 24, 24);
+    border-radius: 50%;
+    margin-left: -25px;
+}
+
+.checkbox__style::before {
+    content: url(check-mark.svg);
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.checkbox:checked+.checkbox__style::before {
+    opacity: 1;
+}
+
+.close, .edit {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0;
+}
+.close {
+    right: 0;
+
+}
+.close img {
+    transition: transform .3s;
+}
+
+.close img:hover {
+    transform: rotate(90deg);
+}
+
+.edit {
+    right: 30px;
+    transition: transform .3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.edit:hover {
+    transform: scale(1.3);
+}
